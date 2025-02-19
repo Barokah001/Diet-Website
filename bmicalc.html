@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Metrics</title>
+  <link rel="stylesheet" href="bmicalc.css">
+</head>
+<body>
+  <div class="container ">
+    <h1>Calculate Your Health Metrics</h1>
+    <form id="healthMetricsForm" class="form">
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age" required>
+      </div>
+      <div class="form-group">
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" placeholder="Enter your height" required>
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" placeholder="Enter your weight" required>
+      </div>
+      <div class="form-group">
+        <label for="waist">Waist Circumference (cm)</label>
+        <input type="number" id="waist" placeholder="Enter your waist circumference" required>
+      </div>
+      <div class="form-group">
+        <label for="hip">Hip Circumference (cm)</label>
+        <input type="number" id="hip" placeholder="Enter your hip circumference" required>
+      </div>
+      <div class="extras">
+        <p>BMI is calculated as Weight(kg) / [Height(m)]².</p>
+        <p>Waist-to-Hip Ratio is Waist(cm) / Hip(cm).</p>
+      </div>
+      <div class="button-container">
+        <button type="button" id="calculateButton">
+          <a href="#">Calculate</a>
+        </button>
+      </div>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+
+  <!-- JS LINK-->
+  <script src="script.js">
+  </script>
+</body>
+</html>
