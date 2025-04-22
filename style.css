@@ -147,7 +147,7 @@ background-color: rgba(0, 0, 0, 0.55);
 
 .small-text {
   text-align: center;
-  margin-bottom: 24;
+  margin-bottom: 24px;
   color: #ffff;
   font-size: 30px;
 }
@@ -180,6 +180,15 @@ background-color: rgba(0, 0, 0, 0.55);
   margin: 20px auto;
 }
 
+.image-container {
+  background: black;
+  position: relative;
+}
+
+.image-container img {
+  position: absolute;
+  overflow: hidden;
+}
 .about-content {
   padding: 0 15px;
   display: flex;
@@ -188,7 +197,6 @@ background-color: rgba(0, 0, 0, 0.55);
   gap: 0.5em;
 }
 
-g
 .intro {
   flex: 1;
 }
